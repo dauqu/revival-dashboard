@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { RxCross2 } from 'react-icons/rx'
 import axios from 'axios';
 import { toast } from "react-toastify";
@@ -25,7 +25,6 @@ const AddUser = ({ show, closePopup, addUserToList }) => {
         try {
             axios.post(`${api}/register`, userData)
                 .then(res => {
-                    // console.log(res.data);
                     if (res.data.status === "success") {
                         toast.success(res.data.message);
                         addUserToList(res.data.user)
@@ -54,7 +53,7 @@ const AddUser = ({ show, closePopup, addUserToList }) => {
  
 
     return (
-        <div className={`relative user_details ${show ? "w-[600px]" : "w-[0px]"}`}>
+        <div className={`relative max-w-[600px] user_details ${show ? "w-[600px]" : "w-[0px]"}`}>
 
             <div className='flex p-2' onClick={closePopup}>
                 <div className='bg-gray-200 cursor-pointer p-2 rounded-[50%]' >

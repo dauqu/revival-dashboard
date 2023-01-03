@@ -146,13 +146,9 @@ p {
 }
 
 .custom-table>tbody>tr>td {
-  padding: 5px 0;
+  /* padding: 5px 0; */
   text-align: center;
 }
-
-/* .custom-table>tbody>tr:nth-of-type(even) {
-  background-color: rgb(218, 218, 218);
-} */
 
 .custom-table>tbody>tr {
   background-color: rgb(245, 245, 245);
@@ -161,7 +157,6 @@ p {
 
 .table_actions>svg {
   cursor: pointer;
-
 }
 
 /* user_detrails  */
@@ -178,7 +173,6 @@ p {
   z-index: 4245;
   transition: all .2s ease-in-out;
   box-sizing: border-box;
-  max-width: 600px;
   overflow-y: auto;
 }
 
@@ -226,11 +220,12 @@ p {
 }
 
 .input_s {
-  row-gap: 10px;
+  
+  row-gap: 5px;
 }
 
 .input_s>input {
-  width: 80%;
+  width: 90%;
   padding: 9px 10px;
   outline: none;
   border: 1px solid rgb(187, 187, 187);
@@ -238,7 +233,7 @@ p {
 }
 
 .input_s>button {
-  width: 80%;
+  width: 90%;
   padding: 10px;
   outline: none;
   border-radius: 5px;
