@@ -56,7 +56,7 @@ const User = () => {
         </span>
       </div>
       <div className='w-full px-4'>
-        <table className='custom-table'>
+        <table className='table table-normal shadow_small w-full'>
           <thead>
             <tr>
               <th>Name</th>
